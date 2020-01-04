@@ -29,7 +29,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="112dp"
         android:background="@drawable/textround"
-        android:drawableLeft="@drawable/ic_action_name4"
+
         android:fadingEdge="horizontal"
         android:hint="Username"
         android:textColor="#8b4513"/>
@@ -41,7 +41,6 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="15dp"
         android:background="@drawable/textround"
-        android:drawableLeft="@drawable/ic_action_name3"
         android:hint="Password"
         android:inputType="textPassword"
         android:textColor="#8b4513" />

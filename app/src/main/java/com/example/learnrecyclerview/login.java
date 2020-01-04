@@ -37,7 +37,7 @@ public class login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (Usrnm.getText().toString().equals(User) && Pswrd.getText().toString().equals(Pass)) {
-                    Intent intent = new Intent(getApplicationContext(), homepage.class);
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(intent);
                 } else if (Usrnm.getText().toString().equals(User) && (!(Pswrd.getText().toString().equals(Pass)))) {
 
