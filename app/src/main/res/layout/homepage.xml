@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#80F5FF41"
+    android:orientation="vertical"
+    tools:context=".homepage">
+
+    <!--  <TextView
+
+          android:id="@+id/txtview"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="45dp"
+          android:text="Home Page"
+          android:textStyle="italic"
+          android:textColor="#8b4513"
+          android:textSize="35sp" />  -->
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/textround"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Name          :"
+                android:textColor="#8b4513"
+
+                android:textSize="20sp"
+
+                />
+
+            <TextView
+
+                android:id="@+id/namedsp"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textColor="#8b4513"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Email-ID      :"
+                android:textColor="#8b4513"
+                android:textSize="20sp" />
+
+            <TextView
+
+                android:id="@+id/emaildsp"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:hint="Email-ID"
+                android:textColor="#8b4513"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Phone No   :"
+                android:textColor="#8b4513"
+                android:textSize="20sp" />
+
+            <TextView
+
+                android:id="@+id/phonedsp"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:hint="Phone No"
+                android:textColor="#8b4513"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Username  :"
+                android:textColor="#8b4513"
+                android:textSize="20sp" />
+
+            <TextView
+
+                android:id="@+id/userdsp"
+                android:layout_width="150sp"
+                android:layout_height="match_parent"
+                android:hint="Username"
+                android:textColor="#8b4513"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/buttonback"
+        android:text="Logout"
+        android:textColor="#FDFAFA"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+
+</LinearLayout>
