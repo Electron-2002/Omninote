@@ -1,4 +1,5 @@
 package com.example.learnrecyclerview;
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -13,6 +14,7 @@ public class login extends AppCompatActivity {
     private EditText Usrnm;
     private EditText Pswrd;
     private Button Login;
+    private Button Reg;
 
     SharedPreferences sharedpreferences;
 
@@ -29,6 +31,7 @@ public class login extends AppCompatActivity {
         Usrnm = findViewById(R.id.lusername);
         Pswrd = findViewById(R.id.lpassword);
         Login = findViewById(R.id.login);
+        Reg = findViewById(R.id.regi);
 
         User = sharedpreferences.getString("Username", null);
         Pass = sharedpreferences.getString("Password", null);
@@ -38,6 +41,7 @@ public class login extends AppCompatActivity {
             public void onClick(View view) {
                 if (Usrnm.getText().toString().equals(User) && Pswrd.getText().toString().equals(Pass)) {
                     Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                    finish();
                     startActivity(intent);
                 } else if (Usrnm.getText().toString().equals(User) && (!(Pswrd.getText().toString().equals(Pass)))) {
 
@@ -45,6 +49,15 @@ public class login extends AppCompatActivity {
                 } else {
                     Toast.makeText(getApplicationContext(), "No such user registered", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        Reg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), registration.class);
+                finish();
+                startActivity(intent);
             }
         });
     }

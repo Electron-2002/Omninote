@@ -29,7 +29,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="112dp"
         android:background="@drawable/textround"
-
+        android:paddingLeft="15dp"
         android:fadingEdge="horizontal"
         android:hint="Username"
         android:textColor="#8b4513"/>
@@ -40,6 +40,7 @@
         android:layout_height="40dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="15dp"
+        android:paddingLeft="15dp"
         android:background="@drawable/textround"
         android:hint="Password"
         android:inputType="textPassword"
@@ -54,6 +55,16 @@
         android:layout_marginTop="65dp"
         android:background="@drawable/buttonback"
         android:text="Login"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/regi"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/buttonback"
+        android:text="Register"
         android:textColor="#FFFFFF" />
 
 

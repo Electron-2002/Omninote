@@ -39,11 +39,6 @@ public class registration extends AppCompatActivity {
         Username = sharedpreferences.getString("Username", null);
         Password = sharedpreferences.getString("Password", null);
 
-        if(Username != null && Password != null){
-            Intent log = new Intent(getApplicationContext(), login.class);
-            startActivity(log);
-        }
-
         sgnup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,6 +64,7 @@ public class registration extends AppCompatActivity {
                     else {
                         Toast.makeText(getApplicationContext(), "Registration Complete", Toast.LENGTH_SHORT).show();
                         Intent Sign = new Intent(getApplicationContext(), login.class);
+                        finish();
                         startActivity(Sign);
                     }
                 }
